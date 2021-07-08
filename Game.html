@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Word</thead></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <h4 id="player_1">P1</h4><span id="player1_score">0</span>
+        <h4 id="player_2">P2</h4><span id="player2_score">0</span>
+        <center>
+            <h1>Guess the Word</h1>
+            <br>
+            <br>
+            <h3 id="question_turn">question_turn</h3>
+            <h3 id="answer_turn">answer_turn</h3>
+            <br>
+            <h4 id="correct"></h4>
+            <br>
+            <br>
+            <div id="output"></div>
+            <br>
+            <label id="hint">Enter 5 or more alphabets</label>
+            <br>
+            <br>
+            <input id="question" class="form-control" type="text" placeholder="Enter the Word">
+            <br>
+            <button id="send_button" onclick="send()" class="btn btn-success">Send</button>
+        </center>
+        <script src="Game.js"></script>
+    </div>
+</body>
+</html>
